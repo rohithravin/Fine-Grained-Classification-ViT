@@ -11,25 +11,6 @@ In recent years, the field of computer vision has seen significant advancements 
 
 Fine-grained image classification is a challenging problem that involves distinguishing between very similar categories within a broader class. Examples include differentiating between species of birds, types of flowers, or models of cars. These tasks are crucial in various domains such as biodiversity monitoring, agriculture, healthcare, and manufacturing.
 
-The importance and usefulness of this project are manifold:
-
-1. **Enhanced Accuracy**:
-   - **Precision in Applications**: Fine-grained classification requires high precision due to the subtle differences between classes. Misclassification can lead to significant errors, especially in critical fields like healthcare or agriculture. Improving the accuracy of these models can directly impact decision-making processes.
-
-2. **Advancement in AI Research**:
-   - **Pushing the Boundaries**: By exploring and applying transfer learning on advanced ViT models, this project contributes to the ongoing research in AI, pushing the boundaries of what these models can achieve in terms of accuracy and efficiency.
-
-3. **Real-World Applications**:
-   - **Biodiversity Monitoring**: Accurate species identification can aid in tracking and conserving wildlife.
-   - **Agriculture**: Identifying plant species and detecting diseases can improve crop management and yield.
-   - **Healthcare**: Detailed classification of medical images can assist in the diagnosis and treatment of diseases.
-
-4. **Scalability and Adaptability**:
-   - **Transferable Methods**: The techniques and models developed in this project can be adapted and applied to other fine-grained classification tasks, making the research broadly applicable.
-
-5. **Leveraging Advanced Models**:
-   - **Vision Transformers**: ViTs have shown the potential to outperform traditional CNNs in various tasks. Their ability to capture long-range dependencies and detailed visual information makes them well-suited for fine-grained classification.
-
 ## Project Plan
 
 ### Phase 1: Setup and Data Preparation
@@ -64,6 +45,19 @@ The importance and usefulness of this project are manifold:
    - Evaluate each fine-tuned model on the test set.
    - Calculate performance metrics: accuracy, precision, recall, F1-score.
    - Compare the performance of all models.
+
+### Checkpoints
+Below are the checkpoints of the models after training has been completed.
+
+| Checkpoints              | 
+| :---------------- | 
+| [ViT Base](https://drive.google.com/file/d/1DiD1tZ9u3aYrlOPlX_C2UicPVnBPZG4E/view?usp=share_link)        | 
+| [DeiT Base](https://drive.google.com/file/d/1dqMvI_su8JLLjfzXZyySkawejeHuLoQ2/view?usp=share_link)          |  
+| [DeiT Small](https://drive.google.com/file/d/1VmVbl2y1iMCsAGp9ckGc4aNOFbD9BinR/view?usp=share_link)    | 
+| [DeiT Tiny](https://drive.google.com/file/d/14eH_SbVb5mPuNneznzNw06s4CSTyvKAD/view?usp=share_link) |  
+| [Swin Base](https://drive.google.com/file/d/150YtaDCujbiJGhDIrWGJ2Z58GDfQsQDh/view?usp=share_link) |  
+| [Swin Small](https://drive.google.com/file/d/1XDTTaa2mjAedSzzrhXd9_QJso3C5QBMr/view?usp=share_link) |  
+| [Swin Tiny](https://drive.google.com/file/d/1lQc3InmEeHpdj3rIhi6XkL9NuU53-vQA/view?usp=share_link) |  
 
 ## Conclusion
 
