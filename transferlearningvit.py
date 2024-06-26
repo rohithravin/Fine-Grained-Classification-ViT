@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
-import torch.optim as optim AutoModel, AutoConfig
+import torch.optim as optim
+from transformers import AutoModel, AutoConfig
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import numpy as np
 import pandas as pd

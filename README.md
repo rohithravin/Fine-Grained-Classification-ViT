@@ -3,7 +3,7 @@
 ## Project Title: Fine-Grained Classification Using Vision Transformers
 
 ### Objective:
-The objective of this project is to evaluate the performance of various pre-trained Vision Transformer (ViT) models for fine-grained image classification tasks. By fine-tuning these models on a specific dataset, we aim to identify the most effective ViT model for this type of classification.
+The objective of this project is to evaluate the performance of various pre-trained Vision Transformer (ViT) models for fine-grained image classification tasks. By using transfer learning on these models on a specific dataset, we aim to identify the most effective vision transformer model for this type of classification.
 
 ### Background and Importance:
 
@@ -17,7 +17,7 @@ The importance and usefulness of this project are manifold:
    - **Precision in Applications**: Fine-grained classification requires high precision due to the subtle differences between classes. Misclassification can lead to significant errors, especially in critical fields like healthcare or agriculture. Improving the accuracy of these models can directly impact decision-making processes.
 
 2. **Advancement in AI Research**:
-   - **Pushing the Boundaries**: By exploring and fine-tuning advanced ViT models, this project contributes to the ongoing research in AI, pushing the boundaries of what these models can achieve in terms of accuracy and efficiency.
+   - **Pushing the Boundaries**: By exploring and applying transfer learning on advanced ViT models, this project contributes to the ongoing research in AI, pushing the boundaries of what these models can achieve in terms of accuracy and efficiency.
 
 3. **Real-World Applications**:
    - **Biodiversity Monitoring**: Accurate species identification can aid in tracking and conserving wildlife.
@@ -49,16 +49,14 @@ The importance and usefulness of this project are manifold:
    - Select pre-trained models from the `timm` library:
      - DeiT: `deit_tiny_patch16_224`, `deit_small_patch16_224`, `deit_base_patch16_224`
      - Swin Transformer: `swin_tiny_patch4_window7_224`, `swin_small_patch4_window7_224`, `swin_base_patch4_window7_224`
-     - Vanilla ViT: `vit_tiny_patch16_224`, `vit_small_patch16_224`, `vit_base_patch16_224`
-     - CvT: `cvt_tiny_patch16_224`, `cvt_small_patch16_224`, `cvt_base_patch16_224`
-     - T2T-ViT: `t2t_vit_t_14`, `t2t_vit_14`, `t2t_vit_24`
+     - Vanilla ViT:  `vit_base_patch16_224`
 
-4. **Fine-Tuning Process**
+4. **Transfer Learning Process**
    - Load each pre-trained model.
    - Replace the final classification layer to match the number of classes in the fine-grained dataset.
    - Define loss function, optimizer, and learning rate scheduler.
    - Train each model on the training set while validating on the validation set.
-   - Save the fine-tuned model weights.
+   - Save the final model weights.
 
 ### Phase 3: Evaluation and Inference
 
@@ -66,11 +64,6 @@ The importance and usefulness of this project are manifold:
    - Evaluate each fine-tuned model on the test set.
    - Calculate performance metrics: accuracy, precision, recall, F1-score.
    - Compare the performance of all models.
-
-6. **Inference**
-   - Select the best-performing model based on evaluation metrics.
-   - Run inference on new, unseen images.
-   - Document the inference process and results.
 
 ## Conclusion
 
